@@ -1,0 +1,31 @@
+<div>
+  <ejs-splitter  height="400px" width="900px" 
+  orientation="Vertical" >
+    <e-panes >
+      <e-pane size="25%" collapsible="true" >
+        <ng-template #content>
+         <div>
+              <h2>Data Grid</h2>
+              The ASP.NET DataGrid control, or DataTable is a feature-rich 
+              control used to display data in a tabular format.
+          </div>
+      </ng-template>
+      </e-pane>
+      <e-pane size="15%" collapsed="true" collapsible="true">
+        <ng-template #content>
+          Middle content          
+        </ng-template>
+      </e-pane>
+       <e-pane resizable="false" >
+        <ng-template #content>
+         <ejs-listview [dataSource]='listData'
+         showHeader='true' headerTitle='Folder' showIcon="true"
+         [fields]='fields' 
+          >
+         </ejs-listview>
+          
+      </ng-template>
+       </e-pane>
+    </e-panes>
+  </ejs-splitter>
+</div>
